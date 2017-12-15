@@ -77,7 +77,7 @@ app.get('/', function (req, res) {
   }
 });
 
-app.get('/pagecount', function (req, res) {
+app.get('/pgcount', function (req, res) {
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
@@ -92,7 +92,7 @@ app.get('/pagecount', function (req, res) {
   }
 });
 app.get('/derp',function(req,res){
-	res.status(200).send("derp");
+	res.status(200).send('derp');
 }
 
 // error handling
