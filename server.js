@@ -91,6 +91,9 @@ app.get('/pagecount', function (req, res) {
     res.send('{ pageCount: -1 }');
   }
 });
+app.get('/derp',function(req,res){
+	res.status(200).send("derp");
+}
 
 // error handling
 app.use(function(err, req, res, next){
